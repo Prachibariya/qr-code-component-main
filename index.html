@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #d5e1ef;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 16px;
+            max-width: 320px;
+            width: 100%;
+            box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .qr-container {
+            background-color: #3685ff;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        /* Replaced CSS-generated QR pattern with actual image */
+        .qr-code {
+            width: 100%;
+            height: 256px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .qr-code img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1f3251;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .description {
+            font-size: 15px;
+            color: #7b879d;
+            line-height: 1.4;
+            padding: 0 8px;
+        }
+
+        @media (max-width: 375px) {
+            .card {
+                margin: 16px;
+            }
+            
+            .title {
+                font-size: 20px;
+            }
+            
+            .description {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="qr-container">
+            <!-- Added actual QR code image -->
+            <div class="qr-code">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OIzFvlZcZptNcLjHR6b4dMPyOH07vF.png" alt="QR Code for Frontend Mentor">
+            </div>
+        </div>
+        <h1 class="title">Improve your front-end skills by building projects</h1>
+        <p class="description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+</body>
+</html>
